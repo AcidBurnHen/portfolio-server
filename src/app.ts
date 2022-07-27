@@ -7,6 +7,8 @@ import * as logger from 'koa-logger';
 import 'reflect-metadata';
 import router from './router';
 
+require('dotenv').config();
+
 const app = new Koa();
 const port = process.env.PORT || 4000;
 
